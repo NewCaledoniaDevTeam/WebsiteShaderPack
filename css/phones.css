@@ -1,0 +1,176 @@
+@charset "utf-8";
+@media (max-width: 1110px) {
+	* {
+		font-size: xx-large;
+	}
+	.border {
+		width: 400px !important;
+	}
+	.bottom {
+		width: 350px !important;
+	}
+	.logo {
+		display: none !important;
+	}
+	.title{
+		font-size: 50px !important;
+	}
+	.title-bar{
+		margin-top: -100px;
+	}
+	img {
+		margin:auto;
+	}
+	.navbar-brand{
+		font-size: 25px;
+		display: inline;
+		 white-space: nowrap;
+	}
+	.navbar-brand img {
+		float: left;
+	}
+	.nav-link {
+	color: transparent !important;
+    visibility: hidden;
+	font-size: 20px;
+}
+
+.nav-link.scrolled {
+	color:black !important;
+	margin-left:auto;
+	margin-right:auto;
+	display: inline;
+	white-space: nowrap;
+	word-wrap: break-word;
+	visibility: visible;
+	font-size: 20px;
+}
+	.bg-light {
+     background:transparent !important;
+     transition:0.75s ease;
+	 color: white !important;
+}
+.bg-light.scrolled {
+     background:#FFFFFF !important;
+}
+	.navbar-brand-img{
+  visibility: hidden;
+	}
+	
+	.navbar-brand-img.scrolled{
+  visibility: visible;
+	}
+	
+	.navbar-toggler{
+		  visibility: hidden;
+	}
+	
+	.navbar-toggler.scrolled{
+		  visibility: visible;
+	}
+	
+	.thumb-post {
+  		margin:auto;
+}
+
+.council-images {
+  		margin:auto;
+}
+
+	.navbar-toggler{
+		width: 45px;
+	}
+	
+	.navbar-toggler-icon{
+		width: 45px;
+		margin-left: -22px;
+	}
+	.navbar-brand{
+		font-size: 20px;
+	}
+	
+	.jumbotron {
+		height: 400px !important;
+	}
+	
+	.dropdown-item{
+	word-wrap: break-word;
+	font-size: 20px;
+}
+	#kori {
+	font-size: 12px;
+	}
+	
+	.newcaltimesjumbo{
+		height: 517!important;
+		width: 2106!important;
+	}
+	.projects {
+		width: 350px;
+		height: 200px;
+		background: no-repeat center;
+  		background-size: cover;
+		margin: auto;
+	}
+}
+	@media (min-width: 768) {
+	.title-bar{
+		margin-top: 0px !important;
+	}
+	.navbar-brand{
+		font-size: 25px;
+		display: inline;
+		 white-space: nowrap;
+	}
+	.navbar-brand img {
+		float: left;
+	}
+	.nav-link {
+	color: transparent !important;
+}
+
+.nav-link.scrolled {
+	color:black !important;
+	margin-left:auto;
+	margin-right:auto;
+	display: inline;
+	white-space: nowrap;
+}
+	.bg-light {
+     background:transparent !important;
+     transition:0.75s ease;
+	 color: white !important;
+}
+.bg-light.scrolled {
+     background:#FFFFFF !important;
+}
+	.navbar-brand-img{
+  visibility: hidden;
+	}
+	
+	.navbar-brand-img.scrolled{
+  visibility: visible;
+	}
+	
+	.navbar-toggler{
+		  visibility: hidden;
+	}
+	
+	.navbar-toggler.scrolled{
+		  visibility: visible;
+	}
+		/*
+.thumb-post {
+  width: 150px !important;
+  height: 100px!important;
+  background: no-repeat center;
+  background-size: cover;
+}
+
+.council-images {
+  width: 128px!important;
+  height: 128px!important;
+  background: no-repeat center;
+  background-size: cover;
+} */
+}

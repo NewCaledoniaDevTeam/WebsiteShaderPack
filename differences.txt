@@ -1,0 +1,8 @@
+|                                      	| Universal 	| Lite 	|
+|--------------------------------------	|-----------	|------	|
+| Custom Music Disc                    	| X         	|      	|
+| Borderless Glass                     	| X         	|      	|
+| File Size                            	|           	| X    	|
+| Dark UI                              	| X         	|      	|
+| No arm armor stands                  	|           	| X    	|
+| Can be used with other texture packs 	|           	| X    	|

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>404 Page Not Found - New Caledonia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="404 Page Not Found - New Caledonia">
+    <meta name="description" content="New Caledonia is a new, ambitious nation that is run entirely in Minecraft. It is a republic run entirely by youth. On this web page, you will find the New Caledonia Times, future public works projects, laws, sports events, and everything you need to know about New Caledonia.">
+
+    <style>
+        body {
+            background: #262525;
+            font-family: "VT323";
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        h1 {
+            font-size: 6em;
+            color: #444;
+            margin: -10px 0 0 0;
+            padding: 0;
+            text-shadow: 1px 1px 1px #111111;
+        }
+        
+        h2 {
+            font-size: 1em;
+            color: #444;
+            margin: 20px 0 0 0;
+            padding: 0;
+            text-shadow: 1px 1px 1px #111111;
+        }
+        
+        .enderman {
+            -webkit-animation: headRotate 4s infinite alternate forwards;
+            animation: headRotate 4s infinite alternate forwards;
+            height: 1000px;
+            margin: 80px auto;
+            perspective: 800px;
+            perspective-origin: -30% 200px;
+            position: relative;
+            width: 200px;
+        }
+        
+        .head {
+            background: black;
+            margin: 0 auto;
+            position: relative;
+            transform-style: preserve-3d;
+            width: 150px;
+        }
+        
+        .head div {
+            height: 90px;
+            position: absolute;
+            width: 100px;
+            z-index: 100;
+        }
+        
+        .right {
+            background: black;
+            transform: rotateY(-270deg) translateX(0);
+            transform-origin: top right;
+        }
+        
+        .left {
+            background: black;
+            transform: rotateY(270deg) translateX(0);
+            transform-origin: center left;
+        }
+        
+        .bottom {
+            background: black;
+            transform: rotateX(90deg) translateY(100px);
+            transform-origin: bottom center;
+        }
+        
+        .front {
+            background: black;
+            transform: translateZ(100px);
+        }
+        
+        .right-eye {
+            background: #fcccfd;
+            height: 10px;
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 40px;
+        }
+        
+        .right-eye::before {
+            background: #f064ff;
+            content: "";
+            height: 10px;
+            margin-left: -5px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 10px;
+        }
+        
+        .left-eye {
+            background: #fcccfd;
+            height: 10px;
+            position: absolute;
+            bottom: 20px;
+            right: 0;
+            width: 40px;
+        }
+        
+        .left-eye::before {
+            background: #f064ff;
+            content: "";
+            height: 10px;
+            margin-left: -5px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 10px;
+        }
+        
+        .enderman-body {
+            background: black;
+            height: 150px;
+            position: absolute;
+            top: 85px;
+            left: 25px;
+            width: 120px;
+        }
+        
+        .enderman-body::before {
+            background: black;
+            content: "";
+            height: 20px;
+            margin-left: -40px;
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            width: 80px;
+        }
+        
+        .left-arm {
+            -webkit-animation: leftArm 2s infinite alternate forwards;
+            animation: leftArm 2s infinite alternate forwards;
+            background: black;
+            height: 400px;
+            position: absolute;
+            top: 85px;
+            left: -5px;
+            transform: rotate(5deg);
+            width: 25px;
+        }
+        
+        .right-arm {
+            -webkit-animation: rightArm 2s infinite alternate backwards;
+            animation: rightArm 2s infinite alternate backwards;
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+            background: black;
+            height: 400px;
+            position: absolute;
+            top: 85px;
+            right: 20px;
+            transform: rotate(-5deg);
+            width: 25px;
+        }
+        
+        .left-leg {
+            background: black;
+            box-shadow: -5px -5px 0 0 black;
+            height: 430px;
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            transform: rotate(-3deg);
+            width: 25px;
+            -webkit-animation: rightLeg 0.15s infinite alternate backwards;
+            animation: rightLeg 0.15s infinite alternate backwards;
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+        
+        .left-leg::after {
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid black;
+            content: "";
+            height: 0;
+            position: absolute;
+            bottom: 0;
+            left: -3px;
+            transform: rotate(-35deg);
+            width: 0;
+        }
+        
+        .right-leg {
+            -webkit-animation: rightLeg 0.15s infinite alternate backwards;
+            animation: rightLeg 0.15s infinite alternate backwards;
+            background: black;
+            box-shadow: -5px -5px 0 0 black;
+            height: 380px;
+            position: absolute;
+            top: 200px;
+            right: 70px;
+            transform: rotate(2deg);
+            width: 25px;
+        }
+        
+        .right-leg::after {
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid black;
+            content: "";
+            height: 0;
+            position: absolute;
+            bottom: 0;
+            left: -3px;
+            transform: rotate(-35deg);
+            width: 0;
+        }
+        
+        .ender-dust {
+            height: 700px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+        }
+        
+        .particle {
+            -webkit-animation: particle 0.65s infinite alternate forwards;
+            animation: particle 0.65s infinite alternate forwards;
+            background: #B83DCD;
+            height: 20px;
+            list-style: none;
+            position: absolute;
+            width: 20px;
+        }
+        
+        .particle:nth-child(1) {
+            top: 8%;
+            left: 42%;
+            width: 12px;
+            height: 12px;
+            -webkit-animation-delay: 0.8s;
+            animation-delay: 0.8s;
+            background: #bb45cf;
+        }
+        
+        .particle:nth-child(2) {
+            top: 0%;
+            left: -8%;
+            width: 7px;
+            height: 7px;
+            -webkit-animation-delay: 1.6s;
+            animation-delay: 1.6s;
+            background: #be4dd1;
+        }
+        
+        .particle:nth-child(3) {
+            top: 48%;
+            left: 45%;
+            width: 12px;
+            height: 12px;
+            -webkit-animation-delay: 2.4s;
+            animation-delay: 2.4s;
+            background: #bb45cf;
+        }
+        
+        .particle:nth-child(4) {
+            top: 23%;
+            left: 50%;
+            width: 12px;
+            height: 12px;
+            -webkit-animation-delay: 3.2s;
+            animation-delay: 3.2s;
+            background: #b941ce;
+        }
+        
+        .particle:nth-child(5) {
+            top: 46%;
+            left: 81%;
+            width: 12px;
+            height: 12px;
+            -webkit-animation-delay: 4s;
+            animation-delay: 4s;
+            background: #bf51d2;
+        }
+        
+        .particle:nth-child(6) {
+            top: 43%;
+            left: 83%;
+            width: 7px;
+            height: 7px;
+            -webkit-animation-delay: 4.8s;
+            animation-delay: 4.8s;
+            background: #bf51d2;
+        }
+        
+        .particle:nth-child(7) {
+            top: 8%;
+            left: -9%;
+            width: 1px;
+            height: 1px;
+            -webkit-animation-delay: 5.6s;
+            animation-delay: 5.6s;
+            background: #be4dd1;
+        }
+        
+        .particle:nth-child(8) {
+            top: 36%;
+            left: 20%;
+            width: 7px;
+            height: 7px;
+            -webkit-animation-delay: 6.4s;
+            animation-delay: 6.4s;
+            background: #c561d6;
+        }
+        
+        @-webkit-keyframes headRotate {
+            0% {
+                perspective-origin: -30% 150px;
+            }
+            50% {
+                perspective-origin: -60% 150px;
+            }
+            100% {
+                perspective-origin: 100% 150px;
+            }
+        }
+        
+        @keyframes headRotate {
+            0% {
+                perspective-origin: -30% 150px;
+            }
+            50% {
+                perspective-origin: -60% 150px;
+            }
+            100% {
+                perspective-origin: 100% 150px;
+            }
+        }
+        
+        @-webkit-keyframes leftArm {
+            0% {
+                transform: translate(10px, 0px);
+            }
+            50% {
+                transform: translate(12px, 0px);
+            }
+            1000% {
+                transform: translate(10px, 0px);
+            }
+        }
+        
+        @keyframes leftArm {
+            0% {
+                transform: translate(10px, 0px);
+            }
+            50% {
+                transform: translate(12px, 0px);
+            }
+            1000% {
+                transform: translate(10px, 0px);
+            }
+        }
+        
+        @-webkit-keyframes rightArm {
+            0% {
+                transform: translate(-10px, 0px);
+            }
+        }
+        
+        @keyframes rightArm {
+            0% {
+                transform: translate(-10px, 0px);
+            }
+        }
+        
+        @-webkit-keyframes leftLeg {
+            0% {
+                top: 185px;
+            }
+        }
+        
+        @keyframes leftLeg {
+            0% {
+                top: 185px;
+            }
+        }
+        
+        @-webkit-keyframes rightLeg {
+            0% {
+                top: 190px;
+            }
+        }
+        
+        @keyframes rightLeg {
+            0% {
+                top: 190px;
+            }
+        }
+        
+        @-webkit-keyframes particle {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        @keyframes particle {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        /* unvisited link */
+        
+        a:link {
+            color: #444;
+        }
+        /* visited link */
+        
+        a:visited {
+            color: #444;
+        }
+        /* mouse over link */
+        
+        a:hover {
+            color: #303030;
+        }
+        /* selected link */
+        
+        a:active {
+            color: #444;
+        }
+        
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
+
+    <br>
+    <h1>404 Page Not Found</h1>
+    <h2 style="font-size: 45px;">Return <a href="https://dash.newcaledonia.us/">Home</a></h2>
+
+    <div class="enderman">
+        <!-- enderman head -->
+        <div class="head">
+            <div class="front">
+                <span class="left-eye"></span>
+                <span class="right-eye"></span>
+            </div>
+            <div class="bottom"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <!-- angry enderman mouth -->
+        <div class="mouth"></div>
+        <!-- enderman body -->
+        <div class="enderman-body"></div>
+        <!-- arms -->
+        <div class="left-arm"></div>
+        <div class="right-arm"></div>
+        <!-- legs -->
+        <div class="left-leg"></div>
+        <div class="right-leg"></div>
+
+        <ul class="ender-dust">
+            <li class="particle"></li>
+            <li class="particle"></li>
+            <li class="particle"></li>
+            <li class="particle"></li>
+            <li class="particle"></li>
+            <li class="particle"></li>
+            <li class="particle"></li>
+            <li class="particle"></li>
+        </ul>
+
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+</body>
+
+</html>

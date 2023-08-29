@@ -1,3 +1,3 @@
 # New Caledonia Shader Pack Download Website
 
-- [download.newcaledonia.us](http://download.newcaledonia.us/)
+- [newcaledoniadevteam.github.io/WebsiteShaderPack/](https://newcaledoniadevteam.github.io/WebsiteShaderPack/
